@@ -1,386 +1,55 @@
-// GITHUB & VERCEL READY REACT HOMEPAGE FOR INTEL SOLUTIONS
-// Save this file as: src/App.jsx
-// Then push the project to GitHub and deploy on Vercel.
+<!DOCTYPE html>
+<html>
+<head>
+  <title>INTEL SOLUTIONS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-export default function IntelSolutionsHomepage() {
-  const gallery = [
-    "/gallery1.jpg",
-    "/gallery2.jpg",
-    "/gallery3.jpg",
-    "/gallery4.jpg",
-  ];
-  const services = [
-    {
-      title: "Academic Services",
-      description: "Research projects, business plans, proposals, and academic support.",
-      icon: "📚",
-    },
-    {
-      title: "Graphic Design",
-      description: "Business cards, wedding cards, invitation cards, programmes, and branding.",
-      icon: "🎨",
-    },
-    {
-      title: "Cyber Services",
-      description: "Online applications, KRA services, CV updates, and digital support.",
-      icon: "💻",
-    },
-    {
-      title: "Printing & Paperwork",
-      description: "Printing, photocopying, lamination, binding, and document processing.",
-      icon: "🖨️",
-    },
-    {
-      title: "Government Services",
-      description: "NTSA, NSSF, NHIF, passport applications, and driving license support.",
-      icon: "🏛️",
-    },
-    {
-      title: "Computer Packages",
-      description: "Basic computer training and digital literacy services.",
-      icon: "🧠",
-    },
-  ];
+<body style="margin:0;font-family:Arial;background:#021226;color:white;text-align:center;">
 
-  return (
-    <>
-      <a
-        href="https://wa.me/254713012995"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-400 transition text-white px-5 py-4 rounded-full shadow-2xl text-lg font-bold"
-      >
-        WhatsApp Us
-      </a>
-    <div className="min-h-screen bg-[#020817] text-white font-sans overflow-hidden">
-      {/* NAVBAR */}
-      <nav className="fixed top-0 left-0 right-0 z-40 backdrop-blur-xl bg-black/30 border-b border-white/10 px-6 py-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-xl font-black shadow-lg shadow-blue-500/40">
-              IS
-            </div>
-            <div>
-              <h1 className="font-black text-xl tracking-wide">INTEL SOLUTIONS</h1>
-              <p className="text-xs text-slate-400">Smart Solutions. Stronger Futures.</p>
-            </div>
-          </div>
+  <div style="padding:60px 20px;">
+    
+    <h1 style="font-size:55px;color:#4da6ff;">
+      INTEL SOLUTIONS
+    </h1>
 
-          <div className="hidden md:flex gap-8 text-slate-300 font-medium">
-            <a href="#services" className="hover:text-blue-400 transition">Services</a>
-            <a href="#about" className="hover:text-blue-400 transition">About</a>
-            <a href="#gallery" className="hover:text-blue-400 transition">Gallery</a>
-            <a href="#contact" className="hover:text-blue-400 transition">Contact</a>
-          </div>
-        </div>
-      </nav>
-      {/* HERO SECTION */}
-      <section className="relative min-h-screen flex items-center justify-center px-6 py-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-950 via-[#06122e] to-black" />
+    <h2>
+      Smart Solutions. Stronger Futures.
+    </h2>
 
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.3),transparent_60%)]" />
-        </div>
+    <p style="max-width:700px;margin:auto;font-size:20px;line-height:1.7;">
+      Professional cyber services, academic support, graphic design,
+      online applications, printing, and digital solutions.
+    </p>
 
-        <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
-          <div>
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-300 mb-6">
-              <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
-              Trusted Digital Service Centre
-            </div>
+    <br><br>
 
-            <h1 className="text-5xl md:text-7xl font-black leading-tight tracking-tight">
-              <span className="text-white">INTEL</span>
-              <br />
-              <span className="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
-                SOLUTIONS
-              </span>
-            </h1>
+    <a href="tel:0713012995"
+       style="background:#007bff;color:white;padding:15px 30px;
+       text-decoration:none;border-radius:10px;font-size:20px;">
+       Call Us
+    </a>
 
-            <p className="mt-6 text-xl text-slate-300 max-w-xl leading-relaxed">
-              Smart Solutions. Stronger Futures.
-              Professional cyber services, academic support, graphic design,
-              online applications, and digital solutions all in one place.
-            </p>
+    <br><br><br>
 
-            <div className="mt-10 flex flex-wrap gap-4">
-              <button className="px-7 py-4 rounded-2xl bg-blue-600 hover:bg-blue-500 transition text-lg font-semibold shadow-2xl shadow-blue-500/30">
-                Explore Services
-              </button>
+    <h2>Our Services</h2>
 
-              <button className="px-7 py-4 rounded-2xl border border-blue-400/30 bg-white/5 hover:bg-white/10 transition text-lg font-semibold">
-                WhatsApp Us
-              </button>
-            </div>
+    <p>
+      KRA Services • Printing • Graphic Design • CV Updates • NTSA •
+      Research Projects • Business Plans • Applications
+    </p>
 
-            <div className="mt-12 grid grid-cols-3 gap-4 max-w-xl">
-              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
-                <h3 className="text-3xl font-bold text-blue-400">24/7</h3>
-                <p className="text-sm text-slate-300 mt-1">Online Support</p>
-              </div>
+    <br><br>
 
-              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
-                <h3 className="text-3xl font-bold text-blue-400">100+</h3>
-                <p className="text-sm text-slate-300 mt-1">Services Offered</p>
-              </div>
+    <h3>Contact</h3>
 
-              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
-                <h3 className="text-3xl font-bold text-blue-400">Fast</h3>
-                <p className="text-sm text-slate-300 mt-1">Reliable Delivery</p>
-              </div>
-            </div>
-          </div>
+    <p>
+      📞 0713012995<br>
+      📧 Intelcyber23@gmail.com<br>
+      📍 Laliat, Ainamoi
+    </p>
 
-          <div className="relative flex justify-center">
-            <div className="absolute inset-0 blur-3xl bg-blue-500/20 rounded-full" />
+  </div>
 
-            <div className="relative bg-gradient-to-br from-blue-500/20 to-cyan-500/10 border border-blue-400/20 rounded-[2rem] p-8 backdrop-blur-xl shadow-2xl shadow-blue-900/40 max-w-lg w-full">
-              <div className="flex items-center justify-between mb-6">
-                <div>
-                  <p className="text-slate-400 text-sm">Business Profile</p>
-                  <h2 className="text-2xl font-bold">INTEL SOLUTIONS</h2>
-                </div>
-
-                <div className="w-14 h-14 rounded-2xl bg-blue-500/20 border border-blue-400/30 flex items-center justify-center text-2xl">
-                  ⚡
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                <div className="rounded-2xl p-5 bg-white/5 border border-white/10">
-                  <h3 className="font-semibold text-blue-300 mb-2">Contact</h3>
-                  <p className="text-slate-300">0713012995</p>
-                  <p className="text-slate-300">Intelcyber23@gmail.com</p>
-                </div>
-
-                <div className="rounded-2xl p-5 bg-white/5 border border-white/10">
-                  <h3 className="font-semibold text-blue-300 mb-2">Location</h3>
-                  <p className="text-slate-300">Laliat, Ainamoi</p>
-                </div>
-
-                <div className="rounded-2xl p-5 bg-white/5 border border-white/10">
-                  <h3 className="font-semibold text-blue-300 mb-2">Core Services</h3>
-                  <div className="flex flex-wrap gap-2 mt-3">
-                    {[
-                      "KRA",
-                      "Printing",
-                      "Design",
-                      "Applications",
-                      "Research",
-                      "CV Updates",
-                    ].map((item) => (
-                      <span
-                        key={item}
-                        className="px-3 py-1 rounded-full text-sm bg-blue-500/20 border border-blue-400/20"
-                      >
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SERVICES SECTION */}
-      <section id="services" className="py-24 px-6 bg-[#040d22]">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-blue-400 font-semibold uppercase tracking-widest">
-              Our Services
-            </p>
-            <h2 className="mt-4 text-4xl md:text-5xl font-black">
-              Digital Solutions For Everyday Needs
-            </h2>
-            <p className="mt-6 text-slate-400 max-w-2xl mx-auto text-lg">
-              We provide reliable and affordable cyber services, academic support,
-              printing, applications, and creative digital solutions.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service) => (
-              <div
-                key={service.title}
-                className="group rounded-[2rem] p-8 bg-white/5 border border-white/10 hover:border-blue-400/40 hover:bg-blue-500/10 transition duration-300"
-              >
-                <div className="w-16 h-16 rounded-2xl bg-blue-500/20 border border-blue-400/20 flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">
-                  {service.icon}
-                </div>
-
-                <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
-
-                <p className="text-slate-400 leading-relaxed">
-                  {service.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ABOUT SECTION */}
-      <section id="about" className="py-24 px-6">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <p className="text-blue-400 font-semibold uppercase tracking-widest">
-              About Us
-            </p>
-            <h2 className="mt-4 text-4xl md:text-5xl font-black leading-tight">
-              Trusted Cyber & Digital Service Centre
-            </h2>
-
-            <p className="mt-8 text-slate-300 text-lg leading-relaxed">
-              INTEL SOLUTIONS is a professional digital service center located in
-              Laliat, Ainamoi. We specialize in cyber services, government
-              applications, academic support, graphic design, printing, and
-              online digital solutions.
-            </p>
-
-            <p className="mt-6 text-slate-400 leading-relaxed">
-              Our goal is to provide fast, reliable, and affordable services to
-              students, businesses, and the local community while maintaining a
-              modern and professional digital experience.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 gap-6">
-            <div className="rounded-[2rem] bg-blue-500/10 border border-blue-400/20 p-8">
-              <h3 className="text-5xl font-black text-blue-400">Fast</h3>
-              <p className="mt-3 text-slate-300">Quick service delivery</p>
-            </div>
-
-            <div className="rounded-[2rem] bg-white/5 border border-white/10 p-8">
-              <h3 className="text-5xl font-black text-blue-400">Pro</h3>
-              <p className="mt-3 text-slate-300">Professional support</p>
-            </div>
-
-            <div className="rounded-[2rem] bg-white/5 border border-white/10 p-8">
-              <h3 className="text-5xl font-black text-blue-400">24/7</h3>
-              <p className="mt-3 text-slate-300">Online assistance</p>
-            </div>
-
-            <div className="rounded-[2rem] bg-blue-500/10 border border-blue-400/20 p-8">
-              <h3 className="text-5xl font-black text-blue-400">100%</h3>
-              <p className="mt-3 text-slate-300">Customer focus</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {{/* GALLERY SECTION */}
-      <section id="gallery" className="py-24 px-6 bg-[#040d22]">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-blue-400 font-semibold uppercase tracking-widest">
-              Gallery
-            </p>
-            <h2 className="mt-4 text-4xl md:text-5xl font-black">
-              Our Work & Business Space
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {gallery.map((image, index) => (
-              <div
-                key={index}
-                className="rounded-[2rem] overflow-hidden border border-white/10 bg-white/5 hover:scale-105 transition duration-300"
-              >
-                <div className="h-72 bg-gradient-to-br from-blue-500/30 to-cyan-500/20 flex items-center justify-center text-slate-300 text-lg font-semibold">
-                  Gallery Image {index + 1}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* MULTI-PAGE PREVIEW SECTION */}
-      <section className="py-24 px-6">
-        <div className="max-w-7xl mx-auto text-center">
-          <p className="text-blue-400 uppercase tracking-widest font-semibold">
-            Website Pages
-          </p>
-
-          <h2 className="mt-4 text-4xl md:text-5xl font-black">
-            Professional Multi-Page Website Structure
-          </h2>
-
-          <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              "Home Page",
-              "Services Page",
-              "Gallery Page",
-              "Contact Page",
-            ].map((page) => (
-              <div
-                key={page}
-                className="rounded-[2rem] p-8 bg-white/5 border border-white/10 hover:border-blue-400/40 hover:bg-blue-500/10 transition"
-              >
-                <div className="text-5xl mb-4">🌐</div>
-                <h3 className="text-2xl font-bold">{page}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* DOMAIN SECTION */}
-      <section className="px-6 pb-24">
-        <div className="max-w-5xl mx-auto rounded-[2rem] border border-blue-400/20 bg-gradient-to-r from-blue-900/40 to-cyan-900/20 p-10 text-center">
-          <p className="text-blue-400 uppercase tracking-widest font-semibold">
-            Custom Domain Ready
-          </p>
-
-          <h2 className="mt-4 text-4xl font-black">
-            intelsolutions.co.ke
-          </h2>
-
-          <p className="mt-6 text-slate-300 text-lg">
-            Your website is ready for connection to a professional .co.ke domain anytime.
-          </p>
-        </div>
-      </section>
-
-      {/* CONTACT SECTION */}}
-      <section id="contact" className="py-24 px-6 bg-gradient-to-br from-blue-950 to-black">
-        <div className="max-w-5xl mx-auto text-center rounded-[2rem] border border-blue-400/20 bg-white/5 backdrop-blur-xl p-12">
-          <p className="text-blue-400 uppercase tracking-widest font-semibold">
-            Contact Us
-          </p>
-
-          <h2 className="mt-4 text-4xl md:text-5xl font-black">
-            Ready To Work With Us?
-          </h2>
-
-          <p className="mt-6 text-slate-300 text-lg max-w-2xl mx-auto">
-            Visit our office in Laliat, Ainamoi or contact us for fast,
-            professional, and reliable digital services.
-          </p>
-
-          <div className="mt-12 grid md:grid-cols-3 gap-6 text-left">
-            <div className="rounded-2xl p-6 bg-white/5 border border-white/10">
-              <p className="text-blue-400 font-semibold mb-2">Phone</p>
-              <p className="text-slate-200 text-lg">0713012995</p>
-            </div>
-
-            <div className="rounded-2xl p-6 bg-white/5 border border-white/10">
-              <p className="text-blue-400 font-semibold mb-2">Email</p>
-              <p className="text-slate-200 text-lg break-all">
-                Intelcyber23@gmail.com
-              </p>
-            </div>
-
-            <div className="rounded-2xl p-6 bg-white/5 border border-white/10">
-              <p className="text-blue-400 font-semibold mb-2">Location</p>
-              <p className="text-slate-200 text-lg">Laliat, Ainamoi</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    </>
-  );
-}
+</body>
+</html>
